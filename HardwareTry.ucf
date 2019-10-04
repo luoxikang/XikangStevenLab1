@@ -1,0 +1,10 @@
+NET "InputUp" LOC = "N3";
+NET "InputBottom" LOC = "E2";
+NET "OutNor" LOC = "G1";
+NET "OutOr" LOC = "P4";
+NET "OutAnd" LOC = "N4";
+NET "OutNand" LOC = "N5";
+
+
+
+

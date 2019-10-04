@@ -1,0 +1,50 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Try1.vf
+// /___/   /\     Timestamp : 09/30/2019 20:30:07
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog B:/XikangStevenLab1/Try1.vf -w B:/XikangStevenLab1/Try1.sch
+//Design Name: Try1
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Try1(InputBottom, 
+            InputUp, 
+            OutAnd, 
+            OutNand, 
+            OutNor, 
+            OutOr);
+
+    input InputBottom;
+    input InputUp;
+   output OutAnd;
+   output OutNand;
+   output OutNor;
+   output OutOr;
+   
+   
+   AND2  XLXI_1 (.I0(InputBottom), 
+                .I1(InputUp), 
+                .O(OutAnd));
+   NAND2  XLXI_2 (.I0(InputBottom), 
+                 .I1(InputUp), 
+                 .O(OutNand));
+   NOR2  XLXI_3 (.I0(InputBottom), 
+                .I1(InputUp), 
+                .O(OutNor));
+   OR2  XLXI_4 (.I0(InputBottom), 
+               .I1(InputUp), 
+               .O(OutOr));
+endmodule

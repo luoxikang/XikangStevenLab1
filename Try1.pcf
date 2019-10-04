@@ -1,0 +1,13 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Sep 30 22:38:51 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "OutOr" LOCATE = SITE "P4" LEVEL 1;
+COMP "OutNor" LOCATE = SITE "G1" LEVEL 1;
+COMP "OutAnd" LOCATE = SITE "N4" LEVEL 1;
+COMP "InputUp" LOCATE = SITE "N3" LEVEL 1;
+COMP "OutNand" LOCATE = SITE "N5" LEVEL 1;
+COMP "InputBottom" LOCATE = SITE "E2" LEVEL 1;
+SCHEMATIC END;
+
